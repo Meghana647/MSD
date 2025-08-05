@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Groups</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f0f4f8;
+    }
+    .navbar {
+      background-color: #004080;
+      padding: 1rem;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    
+    .container {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .group-buttons {
+      margin-bottom: 2rem;
+    }
+
+    .group-buttons button {
+      padding: 12px 24px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px;
+    }
+
+    .group-buttons button:hover {
+      background-color: #0056b3;
+    }
+
+    .groups {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .group-card {
+      background-color: white;
+      padding: 1rem;
+      width: 220px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .group-card:hover {
+      transform: scale(1.03);
+    }
+
+    .group-card h3 {
+      margin: 0.5rem 0;
+      color: #333;
+    }
+
+    .group-card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <h1>Student Portal</h1>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="group-buttons">
+      <button>Join Existing Groups</button>
+      <button>Create Your Own Group</button>
+    </div>
+
+    <div class="groups">
+      <div class="group-card">
+        <h3>Mathematics</h3>
+        <p>Group for solving math problems and preparing for exams.</p>
+      </div>
+
+      <div class="group-card">
+        <h3>Data Structures</h3>
+        <p>Discuss core concepts and practice coding problems together.</p>
+      </div>
+
+      <div class="group-card">
+        <h3>Artificial Intelligence</h3>
+        <p>Explore machine learning, deep learning, and AI projects.</p>
+      </div>
+
+      <div class="group-card">
+        <h3>Web Development</h3>
+        <p>HTML, CSS, JS, React and full-stack discussions.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
